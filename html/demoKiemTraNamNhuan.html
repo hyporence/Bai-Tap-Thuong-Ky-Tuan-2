@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> </title>
+</head>
+
+<body>
+    <p>Nhap nam can kiem tra:</p>
+    <input type="text" name="txtName" id="txtName">
+    <input type="button" value="Kiem tra" onclick="kiemTraNamNhuan ()" />
+    </p>
+    <script language="javascript">
+        function kiemTraNamNhuan() {
+            var nam = document.getElementById("txtName").value;
+
+            if (nam % 100 == 0) {
+                if (nam % 400 == 0) {
+                    alert('Nam ' + nam + ' là năm nhuận');
+                } else {
+                    alert('Nam' + nam + ' : không phải năm nhuận');
+                }
+            } else if (nam % 4 == 0) {
+                alert('Nam ' + nam + ' : là năm nhuận');
+            } else {
+                alert('nam ' + nam + ' : không phải là năm nhuận');
+            }
+        }
+    </script>
+</body>
+
+</html>
